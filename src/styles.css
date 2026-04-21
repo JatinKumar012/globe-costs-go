@@ -40,6 +40,9 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-primary-glow: var(--primary-glow);
+  --color-sunset: var(--sunset);
+  --color-ocean: var(--ocean);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
@@ -62,21 +65,31 @@
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --radius: 1rem;
+  --background: oklch(0.99 0.005 240);
+  --foreground: oklch(0.18 0.04 240);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
+  --card-foreground: oklch(0.18 0.04 240);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
+  --popover-foreground: oklch(0.18 0.04 240);
+  --primary: oklch(0.55 0.18 220);
+  --primary-foreground: oklch(0.99 0 0);
+  --primary-glow: oklch(0.7 0.16 200);
+  --secondary: oklch(0.96 0.02 220);
+  --secondary-foreground: oklch(0.25 0.05 240);
+  --muted: oklch(0.96 0.015 230);
+  --muted-foreground: oklch(0.5 0.03 240);
+  --accent: oklch(0.75 0.18 50);
+  --accent-foreground: oklch(0.15 0.02 50);
+  --sunset: oklch(0.7 0.2 35);
+  --ocean: oklch(0.5 0.18 230);
+  --gradient-hero: linear-gradient(135deg, oklch(0.55 0.18 220 / 0.85), oklch(0.3 0.15 260 / 0.7));
+  --gradient-sunset: linear-gradient(135deg, oklch(0.75 0.2 50), oklch(0.65 0.22 20));
+  --gradient-ocean: linear-gradient(135deg, oklch(0.55 0.18 220), oklch(0.7 0.16 200));
+  --shadow-elegant: 0 20px 60px -15px oklch(0.3 0.15 240 / 0.25);
+  --shadow-card: 0 8px 30px -8px oklch(0.3 0.1 240 / 0.15);
+  --shadow-glow: 0 0 40px oklch(0.7 0.16 200 / 0.4);
+  --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
   --border: oklch(0.929 0.013 255.508);
